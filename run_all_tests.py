@@ -41,7 +41,7 @@ def main():
     # 2. Jalankan Frontend Selenium Tests
     print("\n🖥️ Running Frontend Selenium Tests...")
     frontend_passed = run_command(
-        "cd tests/selenium && pytest test_frontend.py -v --html=../../reports/frontend-test-report.html --self-contained-html",
+        "cd tests/selenium && C:\\xampp8\\htdocs\\taskflow\\backend\\venv\\Scripts\\python.exe -m pytest test_frontend.py -v --html=../../reports/frontend-test-report.html --self-contained-html",
         "Frontend Selenium Tests"
     )
     all_passed = all_passed and frontend_passed
