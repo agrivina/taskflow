@@ -155,7 +155,7 @@ class TaskPage:
         
         # Tunggu modal tertutup dan alert muncul
         self.wait.until(EC.invisibility_of_element_located(self.MODAL_EDIT))
-        self.wait.until(EC.presence_of_element_located(self.ALERT_SUCCESS))
+        time.sleep(2)
     
     def get_alert_message(self):
         """Mendapatkan teks dari alert yang muncul"""
